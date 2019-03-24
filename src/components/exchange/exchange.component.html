@@ -1,10 +1,10 @@
-<div class="card border-light mb-3" *ngFor="let rate of exchangeDetail | slice:0:3; let i = index;">
-      <div class="card-header bg-primary text-white">
+<div class="[ card ] [ border-light ] [ mb-3 ]"  *ngFor="let rate of exchangeDetail | slice:0:3; let i = index;">
+      <div class="[ card-header ] [ bg-primary ] [ text-white ]">
             <h5>{{ rate.shortName }} to ISK</h5>
       </div>
-      <div class="card-body">
-            <h5 class="card-title"><b>1 {{ rate.shortName }} is : {{ rate.value }} ISK</b></h5>
+      <div class="[ card-body ]">
+            <h5 class="[ card-title ]" ><b>1 {{ rate.shortName }} is : {{ rate.value }} ISK</b></h5>
       </div>
-      <div class="card-footer text-right"><small class="text-muted">Exchange Rates</small></div>
+      <div class="[ card-footer ] [ text-right ]"><small class="[ text-muted ]">Exchange Rates</small></div>
 </div>
                 

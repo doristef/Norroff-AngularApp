@@ -1,11 +1,11 @@
-<div class="card bg-light mb-3" *ngFor="let weather of weatherDetail">
-      <div class="card-header bg-info text-white">
+<div class="[ card ] [ border-light ] [ mb-3 ]" *ngFor="let weather of weatherDetail">
+      <div class="[ card-header ] [ bg-info ] [ text-white ]">
             <h5>Weather Report</h5>
             <h6 class="[ text-right ]">Oslo, Norway</h6>
       </div>
-      <div class="card-body">
-            <h5 class="card-title">Sky Conditions: {{ weather.weather_state_name  }}</h5>
-            <p class="card-text">      
+      <div class="[ card-body ]">
+            <h5 class="[ card-title ]">Sky Conditions: {{ weather.weather_state_name  }}</h5>
+            <p class="[ card-text ]">      
                   <strong>Min Tempreture:</strong> {{ weather.min_temp }}<br />
                   <strong>Max Tempreture:</strong> {{ weather.max_temp }}<br />
                   <strong>Actual Tempreture:</strong> {{ weather.the_temp }}<br />
@@ -13,6 +13,6 @@
                   <strong>Humidity:</strong> {{ weather.humidity }}<br />
             </p>
       </div>
-      <div class="card-footer text-right"><small class="text-muted">{{weather.applicable_date | date: 'dd.MM.yyyy' }}</small></div>
+      <div class="[ card-footer ] [ text-right ]"><small class="[ text-muted ]">{{weather.applicable_date | date: 'dd.MM.yyyy' }}</small></div>
 </div>
                 

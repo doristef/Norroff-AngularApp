@@ -1,0 +1,56 @@
+<nav class="[ navbar navbar-expand-lg navbar-dark bg-dark ] px-2 sticky-top">
+            <a class="navbar-brand" href="/">Dashboard v1</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      
+            <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                        <a class="nav-link" type="button"
+                        (click)="showAdvice = !showAdvice; toggleClass('advice')" id="advice">Advice</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link"  type="button"
+                        (click)="showWeather = !showWeather; toggleClass('weather')" id="weather">Weather</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" type="button"
+                        (click)="showJokes = !showJokes; toggleClass('jokes')" id="jokes">Jokes</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" type="button"
+                        (click)="showTrivia = !showTrivia; toggleClass('trivia')" id="trivia">Trivia</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" type="button"
+                        (click)="showExchange = !showExchange; toggleClass('exchange')" id="exchange">Exchange</a>
+                  </li>
+            </ul>
+            <span class="navbar-text">
+                  <small>Logged in as:</small> {{ username }}
+            </span>
+            </div>
+</nav>
+
+<div class="container-fluid mt-5">
+      <div class="d-flex justify-content-center h-100">
+            <app-advice [adviceDetail]="adviceDetail" *ngIf="showAdvice"></app-advice>
+
+            <app-weather [weatherDetail]="weatherDetail" *ngIf="showWeather"></app-weather>
+
+            <app-jokes [jokesDetail]="jokesDetail" *ngIf="showJokes"></app-jokes>
+
+            <app-trivia [triviaDetail]="triviaDetail" *ngIf="showTrivia"></app-trivia>
+
+            <app-exchange [exchangeDetail]="exchangeDetail" *ngIf="showExchange"></app-exchange>
+
+            <div *ngIf=" !showAdvice && !showExchange && !showJokes && !showTrivia && !showWeather">
+                  <h1>
+                        Welcome , this is your dashboard.
+                  </h1>
+                  <p>Click on the links inside the navigation bar.</p>
+            </div>
+      </div>
+</div>

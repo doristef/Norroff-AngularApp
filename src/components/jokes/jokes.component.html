@@ -1,0 +1,10 @@
+<div class="card border-light mb-3" *ngFor="let joke of jokesDetail | slice:0; let i = index;">
+      <div class="card-header bg-danger text-white">
+            <h5>Joke {{ i + 1 }}: </h5>
+      </div>
+      <div class="card-body">
+            <h5 class="card-title"><b>{{ joke.joke }}</b></h5>
+      </div>
+      <div class="card-footer text-right"><small class="text-muted">Chuck Norris Jokes</small></div>
+</div>
+                      

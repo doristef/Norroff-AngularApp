@@ -1,0 +1,9 @@
+<div class="card bg-light mb-3" *ngFor="let advice of adviceDetail">
+    <div class="card-header bg-warning text-white">
+        <h5>Today's advice:</h5></div>
+    <div class="card-body">
+        <h5 class="card-title">{{ advice.advice }}</h5>
+    </div>
+    <div class="card-footer text-right"><small class="text-muted">#{{ advice.slip_id }}</small></div>
+</div>
+        

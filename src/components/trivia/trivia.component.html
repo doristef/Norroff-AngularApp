@@ -1,0 +1,12 @@
+<div class="card border-light mb-3" *ngFor="let question of triviaDetail | slice:0; let i = index;">
+      <div class="card-header bg-success text-white">
+            <h5>Trivia Question {{ i + 1 }}</h5>
+      </div>
+      <div class="card-body">
+            <h5 class="card-title" [innerHTML]="question.question" ></h5> 
+            <button type="button" class="btn btn-sm btn-outline-success" (click)="toggleIdField(i)" [id]="'button' + i">Show Answer</button>
+            <div [id]="'div' + i" style="display: none;"><h3>{{ question.correct_answer }}</h3></div>
+      </div>
+      <div class="card-footer text-right"><small class="text-muted">{{ question.difficulty }}</small></div>
+      </div>
+                      

@@ -1,7 +1,3 @@
-# Norroff-AngularApp
-Module Assignment 4 in JavaScript Frameworks at Noroff. Creating a dashboard with multiple API connection
-
-
 # Norroff-AngularApp - Dashboard w/ Login & Multiple APIs
 ## Module Assignment 4 in JavaScript Frameworks at Noroff.
 ==============================================================================

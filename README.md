@@ -27,6 +27,11 @@ Live
 ---
 
 You can also see a live version at http://doristef.me/semester4/noroff-angularapp/
+```
+## Login:
+Username: halldor
+Password: doristef
+```
 
 API
 ---

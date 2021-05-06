@@ -11,7 +11,7 @@ import 'rxjs';
   selector: 'app-dashboard-page',
   templateUrl: './dashboard-page.component.html',
   styleUrls: ['./dashboard-page.component.scss'],
-  providers: [WeatherService, CnJokesService, AdviceService, TriviaService, ExchangeService]
+  providers: [WeatherService, CnJokesService, AdviceService, TriviaService, ExchangeService],
 })
 
 export class DashboardPageComponent implements OnInit {
@@ -23,7 +23,7 @@ export class DashboardPageComponent implements OnInit {
   public exchangeDetail: Array<any>;
   public id: Number;
   public buttonName: String = 'Show';
-  public  username: String;
+  public username: String;
   
   constructor(
     protected router: Router, 
@@ -40,6 +40,12 @@ export class DashboardPageComponent implements OnInit {
       element.classList.remove('active') : 
       element.classList.add('active')
    }
+   toggleNav(id) {
+    let element = document.getElementById(id) as HTMLElement;
+    element.classList.contains('collapse') ? 
+    element.classList.remove('collapse') : 
+    element.classList.add('collapse')
+ }
 
   ngOnInit() {
 

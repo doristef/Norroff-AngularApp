@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class CnJokesService {
   private url = 'http://api.icndb.com/jokes/random/10/?escape=javascript'; // Fetch 10 random jokes, escape special characters
-  private conversionUrl = 'https://cors-anywhere.herokuapp.com/';
+  private conversionUrl = ''; // https://cors-anywhere.herokuapp.com/
 
 
   constructor(private http: Http) {

@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class AdviceService {
   private url = 'https://api.adviceslip.com/advice';
-  private conversionUrl = 'https://cors-anywhere.herokuapp.com/';
+  private conversionUrl = '';
 
 
   constructor(private http: Http) {

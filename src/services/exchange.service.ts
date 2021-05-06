@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class ExchangeService {
   private url = 'https://apis.is/currency/m5';
-  private conversionUrl = 'https://cors-anywhere.herokuapp.com/';
+  private conversionUrl = '';
 
 
   constructor(private http: Http) {

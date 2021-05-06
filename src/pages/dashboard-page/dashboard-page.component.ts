@@ -51,9 +51,11 @@ export class DashboardPageComponent implements OnInit {
 
     this.username = localStorage.getItem('Username').charAt(0).toUpperCase() + localStorage.getItem('Username').slice(1); // Get username and Uppercase first!
 
+    /* 
     if (!sessionStorage.getItem('AuthToken')) {
       this.router.navigate(['/']);
     }
+    */
 
     this.weatherService.getWeekForecast()
     .subscribe(

@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class TriviaService {
   private url = 'https://opentdb.com/api.php?amount=10&category=14&type=boolean';
-  private conversionUrl = 'https://cors-anywhere.herokuapp.com/';
+  private conversionUrl = '';
 
 
   constructor(private http: Http) {
